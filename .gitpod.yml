@@ -4,4 +4,4 @@ tasks:
   - init: |
       python -m pip install
       python -m pip install uvicorn
-   command: uvicorn app.main:app --reload 
+    command: uvicorn app.main:app --reload 
