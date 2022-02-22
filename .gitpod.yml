@@ -1,4 +1,12 @@
-#tasks:
+tasks:
+  - init: |
+      pip install fastapi
+      gp sync-done installation
+    command:  
+  - init:  |
+      gp sync-await installation
+      pip install uvicorn
+    command: uvicorn app.main:app --reload
 #  - name: Start web server
 #    init: python -m http.server 8000
 
