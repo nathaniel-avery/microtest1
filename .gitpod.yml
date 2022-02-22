@@ -4,10 +4,3 @@ tasks:
     python -m pip install uvicorn
     python main.py
   command: uvicorn app.main:app --reload 
-
-#  - name: Start web server
-#    init: python -m http.server 8000
-
-#ports:
-#  - port: 8000
-#    onOpen: open-preview
