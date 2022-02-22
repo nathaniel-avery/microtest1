@@ -1,7 +1,8 @@
 tasks:
   init: |
-    pip install fastapi
-    pip install uvicorn
+    python -m pip install fastapi
+    python -m pip install uvicorn
+    python main.py
   command: uvicorn app.main:app --reload 
 
 #  - name: Start web server
