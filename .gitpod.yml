@@ -1,7 +1,7 @@
 tasks:
-  - init: python -m pip install
+  - init: gp sync-done installation
     command: python -m pip install fastapi
   - init: |
-      python -m pip install
+      gp sync-await installation
       python -m pip install uvicorn
     command: uvicorn app.main:app --reload 
