@@ -1,5 +1,6 @@
 tasks:
   - init: python pip install
-    command: python -m pip install fastapi
-    init: python -m pip install uvicorn
-    command: uvicorn app.main:app --reload 
+    command: |
+      python -m pip install fastapi &&
+      python -m pip install uvicorn &&
+      uvicorn app.main:app --reload 
