@@ -2,7 +2,6 @@ tasks:
   - init: |
       pip install fastapi
       pip install uvicorn
-      gp sync-done installation
     command: uvicorn app.main:app --reload 
 
 #  - name: Start web server
